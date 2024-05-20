@@ -1,0 +1,2 @@
+# aimo
+Kaggle AIMO challenge
