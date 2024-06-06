@@ -2,6 +2,7 @@ import pandas as pd
 import json 
 import postprocess
 
+cleaned_problems = '../input/aimo-script/cleaned_problems.json'
 
 class FakeEnv:
 
@@ -21,7 +22,7 @@ class FakeEnv:
         self.answers.append(submission)
 
 def make_env():
-    with open('../input/AIME/cleaned_problems.json') as f:
+    with open(cleaned_problems) as f:
         data = json.load(f) 
     numeric_problems = []
     for problem in data:
